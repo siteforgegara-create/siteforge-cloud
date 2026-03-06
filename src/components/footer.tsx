@@ -28,7 +28,7 @@ export function Footer() {
             Gumroad
           </a>
           <a
-            href="mailto:hello@siteforge.cloud"
+            href="mailto:siteforge.gara@gmail.com"
             className="text-xs text-white/40 hover:text-white/70 transition-colors"
           >
             Contact
