@@ -5,6 +5,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://siteforge.cloud"),
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   title: {
     default: "SiteForge — Premium Next.js SaaS Templates",
     template: "%s | SiteForge",
