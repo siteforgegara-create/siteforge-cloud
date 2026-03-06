@@ -60,7 +60,7 @@ export function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://saas-starter-blackbird.vercel.app"
+            href="https://demo.siteforge.cloud"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-white/60 hover:text-white transition-colors"

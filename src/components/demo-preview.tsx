@@ -120,7 +120,7 @@ export function DemoPreview() {
           className="text-center mt-8"
         >
           <a
-            href="https://saas-starter-blackbird.vercel.app"
+            href="https://demo.siteforge.cloud"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 transition-colors text-sm font-medium"

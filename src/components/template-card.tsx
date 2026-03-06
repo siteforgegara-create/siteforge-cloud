@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink, Check } from "lucide-react";
 import type { Template } from "@/lib/templates";
