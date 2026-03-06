@@ -100,7 +100,7 @@ export function PricingSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           {[
             {
