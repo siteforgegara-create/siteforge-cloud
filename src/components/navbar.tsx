@@ -92,7 +92,7 @@ export function Navbar() {
           <Link href="/#templates" className="text-sm text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>Templates</Link>
           <Link href="/#features" className="text-sm text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>Features</Link>
           <Link href="/#pricing" className="text-sm text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>Pricing</Link>
-          <a href="https://saas-starter-blackbird.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white">View Demo →</a>
+          <a href="https://demo.siteforge.cloud" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white">View Demo →</a>
           <a
             href="https://siteforge.gumroad.com/l/saas-starter"
             target="_blank"
