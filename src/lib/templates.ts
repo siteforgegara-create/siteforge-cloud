@@ -25,7 +25,7 @@ export const TEMPLATES: Template[] = [
     price: 97,
     gumroadUrl: "https://siteforge.gumroad.com/l/saas-starter",
     demoUrl: "https://saas-starter-blackbird.vercel.app",
-    badge: "BESTSELLER",
+    badge: "NEW",
     features: [
       "Next.js 16 + TypeScript strict",
       "NextAuth v5 (Google, Magic Link, Credentials)",
@@ -34,7 +34,7 @@ export const TEMPLATES: Template[] = [
       "Upgrade/downgrade via Billing Portal",
       "AI chat with streaming (OpenAI)",
       "Message limits per plan",
-      "MDX Blog with syntax highlighting",
+      "MDX Blog + SEO utilities",
       "SEO utilities & sitemap",
       "Dark mode + shadcn/ui",
       "Framer Motion animations",

@@ -68,8 +68,8 @@ export function Hero() {
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="w-4 h-4 fill-violet-400 text-violet-400" />
           ))}
-          <span className="text-sm text-white/40 ml-2">
-            Trusted by indie hackers & founders
+          <span className="text-sm text-white/40">
+            Built for indie hackers & founders
           </span>
         </motion.div>
 
