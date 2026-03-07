@@ -23,7 +23,7 @@ export const TEMPLATES: Template[] = [
     description:
       "A production-ready Next.js 16 SaaS starter with everything you need: authentication, Stripe subscriptions, AI chat, MDX blog, and full documentation. Stop building plumbing — ship your product.",
     price: 97,
-    gumroadUrl: "https://siteforge.gumroad.com/l/saas-starter",
+    gumroadUrl: "https://forgegala.gumroad.com/l/saas-starter",
     demoUrl: "https://demo.siteforge.cloud",
     badge: "NEW",
     features: [

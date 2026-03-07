@@ -79,7 +79,7 @@ export function PricingSection() {
 
             {/* CTA */}
             <a
-              href="https://siteforge.gumroad.com/l/saas-starter"
+              href="https://forgegala.gumroad.com/l/saas-starter"
               target="_blank"
               rel="noopener noreferrer"
               className="group w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-500 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:shadow-2xl hover:shadow-violet-600/30"

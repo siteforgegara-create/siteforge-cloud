@@ -78,7 +78,7 @@ export function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
-            href="https://siteforge.gumroad.com/l/saas-starter"
+            href="https://forgegala.gumroad.com/l/saas-starter"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-500 text-white px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 hover:shadow-xl hover:shadow-violet-600/30 hover:-translate-y-0.5"
