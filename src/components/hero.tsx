@@ -2,6 +2,9 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { purchase, buyLabel, TEMPLATES } from "@/lib/templates";
+
+const PRICE = TEMPLATES[0].price;
 
 export function Hero() {
   return (
@@ -78,12 +81,12 @@ export function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
-            href="https://forgegala.gumroad.com/l/saas-starter"
+            href={purchase.href}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-500 text-white px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 hover:shadow-xl hover:shadow-violet-600/30 hover:-translate-y-0.5"
           >
-            Get SAAS-STARTER — $97
+            {buyLabel(`Get SAAS-STARTER — $${PRICE}`)}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
           <a

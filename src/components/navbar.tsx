@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X, Zap } from "lucide-react";
+import { purchase, buyLabel, TEMPLATES } from "@/lib/templates";
+
+const PRICE = TEMPLATES[0].price;
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -68,12 +71,12 @@ export function Navbar() {
             View Demo →
           </a>
           <a
-            href="https://forgegala.gumroad.com/l/saas-starter"
+            href={purchase.href}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm bg-violet-600 hover:bg-violet-500 text-white px-4 py-2 rounded-lg font-medium transition-all hover:shadow-lg hover:shadow-violet-600/25"
           >
-            Get Template — $97
+            {buyLabel(`Get Template — $${PRICE}`, "Coming soon")}
           </a>
         </div>
 
@@ -94,12 +97,12 @@ export function Navbar() {
           <Link href="/#pricing" className="text-sm text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>Pricing</Link>
           <a href="https://demo.siteforge.cloud" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white">View Demo →</a>
           <a
-            href="https://forgegala.gumroad.com/l/saas-starter"
+            href={purchase.href}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm bg-violet-600 text-white px-4 py-2 rounded-lg font-medium text-center"
           >
-            Get Template — $97
+            {buyLabel(`Get Template — $${PRICE}`, "Coming soon")}
           </a>
         </div>
       )}

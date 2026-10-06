@@ -2,6 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
+import { purchase, buyLabel, TEMPLATES } from "@/lib/templates";
+
+const PRICE = TEMPLATES[0].price;
 
 export function PricingSection() {
   return (
@@ -45,7 +48,7 @@ export function PricingSection() {
               </div>
               <div className="text-right md:text-left">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-6xl font-bold text-white">$97</span>
+                  <span className="text-6xl font-bold text-white">${PRICE}</span>
                   <span className="text-white/40 text-lg">one-time</span>
                 </div>
                 <p className="text-violet-400/70 text-sm mt-1">Price increases after initial sales</p>
@@ -59,14 +62,14 @@ export function PricingSection() {
                 "NextAuth v5 + email verification",
                 "Stripe subscriptions + webhooks",
                 "4 pricing tiers (Free/Starter/Pro/Enterprise)",
-                "OpenAI streaming chat + message limits",
+                "Streaming AI chat (any model) + message limits",
                 "MDX Blog + SEO utilities",
                 "Dashboard with sidebar + settings",
                 "shadcn/ui + Tailwind + Framer Motion",
                 "Resend transactional emails",
                 "Prisma 7 + Neon PostgreSQL",
-                "README + SETUP + DEPLOYMENT docs",
-                "Lifetime updates via Gumroad",
+                "Setup, deployment & customization docs",
+                "Lifetime updates",
               ].map((feature) => (
                 <div key={feature} className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-violet-600/20 border border-violet-500/30 flex items-center justify-center shrink-0">
@@ -79,17 +82,17 @@ export function PricingSection() {
 
             {/* CTA */}
             <a
-              href="https://forgegala.gumroad.com/l/saas-starter"
+              href={purchase.href}
               target="_blank"
               rel="noopener noreferrer"
               className="group w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-500 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:shadow-2xl hover:shadow-violet-600/30"
             >
-              Get Instant Access on Gumroad
+              {buyLabel(`Get it on ${purchase.platform}`)}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
 
             <p className="text-center text-white/25 text-xs mt-4">
-              Delivered via Gumroad · Instant download · Use for unlimited projects
+              {purchase.available ? `Delivered via ${purchase.platform} · Instant download · Use for unlimited projects` : "Use for unlimited projects · One-time payment"}
             </p>
           </div>
         </motion.div>
@@ -117,7 +120,7 @@ export function PricingSection() {
             },
             {
               q: "How do updates work?",
-              a: "Updates are delivered via Gumroad. You get access to all future updates at no extra cost.",
+              a: "One purchase includes all future updates of the template at no extra cost.",
             },
           ].map((faq) => (
             <div key={faq.q} className="card-dark rounded-xl p-5">

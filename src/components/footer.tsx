@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Zap } from "lucide-react";
+import { purchase } from "@/lib/templates";
 
 export function Footer() {
   return (
@@ -19,14 +20,16 @@ export function Footer() {
         </p>
 
         <div className="flex items-center gap-6">
-          <a
-            href="https://siteforge.gumroad.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-white/40 hover:text-white/70 transition-colors"
-          >
-            Gumroad
-          </a>
+          {purchase.available && (
+            <a
+              href={purchase.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-white/40 hover:text-white/70 transition-colors"
+            >
+              {purchase.platform}
+            </a>
+          )}
           <a
             href="mailto:siteforge.gara@gmail.com"
             className="text-xs text-white/40 hover:text-white/70 transition-colors"

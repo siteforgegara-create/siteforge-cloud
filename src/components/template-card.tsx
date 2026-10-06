@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink, Check } from "lucide-react";
-import type { Template } from "@/lib/templates";
+import { purchase, buyLabel, type Template } from "@/lib/templates";
 
 interface TemplateCardProps {
   template: Template;
@@ -87,12 +87,12 @@ export function TemplateCard({ template, index }: TemplateCardProps) {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-3">
           <a
-            href={template.gumroadUrl}
+            href={purchase.href}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 group/btn flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-500 text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:shadow-lg hover:shadow-violet-600/25"
           >
-            Buy on Gumroad
+            {buyLabel(`Get it on ${purchase.platform}`)}
             <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
           </a>
           <a
